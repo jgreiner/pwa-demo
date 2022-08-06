@@ -3,3 +3,4 @@
 @import 'EXT:headless/Configuration/TypoScript/setup.typoscript'
 
 @import 'EXT:site_package/Configuration/TypoScript/Plain/*.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Plain/MaskContentElement/*.typoscript'
