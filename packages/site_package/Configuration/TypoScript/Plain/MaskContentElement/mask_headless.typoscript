@@ -1,0 +1,18 @@
+tt_content.mask_headless = JSON
+tt_content.mask_headless {
+    fields {
+        header = TEXT
+        header {
+            field = tx_mask_text
+        }
+        link = TEXT
+        link {
+            typolink{
+                parameter {
+                    field = tx_mask_link
+                }
+                returnLast = result
+            }
+        }
+    }
+}
