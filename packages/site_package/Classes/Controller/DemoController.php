@@ -15,8 +15,6 @@ class DemoController extends ActionController
         for($i=0;$i<=50;$i++) {
             $data['item'.$i] = random_int(0,10000);
         }
-
-
         return new JsonResponse($data);
     }
 }
