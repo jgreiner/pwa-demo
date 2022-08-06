@@ -1,10 +1,8 @@
-base: api.pwa-demo.ddev.site
-baseVariants: {  }
-errorHandling: {  }
+base: 'https://api.pwa-demo.ddev.site'
+frontendBase: 'https://pwa-demo.ddev.site'
 headless: true
 languages:
-  -
-    languageId: '0'
+  - languageId: 0
     title: English
     navigationTitle: English
     base: /
@@ -15,8 +13,7 @@ languages:
     typo3Language: default
     flag: us
     enabled: true
-  -
-    languageId: '1'
+  - languageId: 1
     title: Polish
     navigationTitle: Polish
     base: /pl/
@@ -29,8 +26,7 @@ languages:
     fallbackType: fallback
     fallbacks: '0'
     enabled: true
-  -
-    languageId: '2'
+  - languageId: 2
     title: German
     navigationTitle: Deutsch
     base: /de/
@@ -44,4 +40,13 @@ languages:
     fallbacks: '0'
     enabled: true
 rootPageId: 1
-routes: {  }
+websiteTitle: ''
+routeEnhancers:
+  NewsPages:
+    type: Extbase
+    limitToPages: [ 24,25 ]
+    extension: News
+    plugin: Pi1
+    routes:
+      - { routePath: '/{myNewsTitle}', _controller: 'News::detail', _arguments: { 'myNewsTitle': 'news' } }
+    defaultController: 'News::list'

@@ -9,6 +9,10 @@ tx_sitepackage_slide {
         test {
             value = test
         }
+        jochen = TEXT
+        jochen {
+            value = geil
+        }
         bodytext = TEXT
         bodytext {
             field = bodytext
