@@ -5,7 +5,7 @@ initialData.10.fields {
             10 = FriendsOfTYPO3\Headless\DataProcessing\MenuProcessor
             10 {
                 special = directory
-                special.value = 30
+                special.value = 29
                 levels = 2
                 expandAll = 1
                 includeSpacer = 1
