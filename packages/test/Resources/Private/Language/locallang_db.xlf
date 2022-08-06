@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:test/Resources/Private/Language/locallang_db.xlf" date="2022-08-06T13:02:36Z" product-name="test">
+		<header/>
+		<body>
+			<trans-unit id="tx_test_domain_model_model1" resname="tx_test_domain_model_model1">
+				<source>Model1</source>
+			</trans-unit>
+			<trans-unit id="tx_test_domain_model_model1.name" resname="tx_test_domain_model_model1.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_test_domain_model_model1.model2" resname="tx_test_domain_model_model1.model2">
+				<source>Model2</source>
+			</trans-unit>
+			<trans-unit id="tx_test_domain_model_model2" resname="tx_test_domain_model_model2">
+				<source>Model2</source>
+			</trans-unit>
+			<trans-unit id="tx_test_domain_model_model2.name" resname="tx_test_domain_model_model2.name">
+				<source>Name</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

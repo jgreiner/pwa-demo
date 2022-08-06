@@ -4,8 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9280ac2a16aab665bb580c128d3b27ee",
+    "content-hash": "0225195edd86bbec0453680e7059b706",
     "packages": [
+        {
+            "name": "analogde/test",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/test",
+                "reference": "a966db451a732d63473b96cfbc6a21d2b32427e0"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5"
+            },
+            "replace": {
+                "typo3-ter/test": "self.version"
+            },
+            "require-dev": {
+                "typo3/testing-framework": "^6.9.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/public",
+                    "extension-key": "test"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Analogde\\Test\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Analogde\\Test\\Tests\\": "Tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
         {
             "name": "bacon/bacon-qr-code",
             "version": "2.0.7",
@@ -7693,7 +7741,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "analogde/test": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

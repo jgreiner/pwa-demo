@@ -1,0 +1,24 @@
+tt_content.list =< lib.contentElementWithHeader
+tt_content.list {
+    fields {
+        content {
+            fields {
+                data = CASE
+                data {
+                    key.field = list_type
+
+                    test_test = USER
+                    test_test {
+                        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+                        vendorName = Analogde
+                        extensionName = Test
+                        pluginName = Test
+                        controller = List
+                        settings < plugin.tx_news.settings
+
+                    }
+                }
+            }
+        }
+    }
+}

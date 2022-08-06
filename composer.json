@@ -27,6 +27,7 @@
         "georgringer/news": "^9.4",
         "helhum/typo3-console": "^7.0.3",
         "mask/mask": "^7.2",
+        "analogde/test": "@dev",
         "pwademo/site-package": "^1",
         "typo3/cms-belog": "^11.5",
         "typo3/cms-beuser": "^11.5",

@@ -1,0 +1,22 @@
+plugin.tx_test_test {
+    view {
+        templateRootPaths.0 = EXT:test/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_test_test.view.templateRootPath}
+        partialRootPaths.0 = EXT:test/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_test_test.view.partialRootPath}
+        layoutRootPaths.0 = EXT:test/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_test_test.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_test_test.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}
