@@ -1,5 +1,6 @@
 base: https://api.pwa-demo.ddev.site
 frontendBase: https://pwa-demo.ddev.site
+frontendApiProxy: https://pwa-demo.ddev.site/headless
 baseVariants: {  }
 errorHandling: {  }
 headless: true

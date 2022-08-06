@@ -115,7 +115,7 @@ return [
         'features' => [
             'headless.elementBodyResponse' => false,
             'headless.frontendUrls' => true,
-            'headless.redirectMiddlewares' => false,
+            'headless.redirectMiddlewares' => true,
             'headless.workspaces' => false,
             'unifiedPageTranslationHandling' => true,
         ],
