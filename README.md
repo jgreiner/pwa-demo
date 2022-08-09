@@ -67,3 +67,6 @@ To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-t
     yarn dev
     ```
 6. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.
+
+
+## https://github.com/TYPO3-Headless/create-nuxt-typo3
